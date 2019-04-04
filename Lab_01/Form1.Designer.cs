@@ -36,6 +36,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.treeView = new System.Windows.Forms.TreeView();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -48,7 +50,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 211);
+            this.textBox2.Location = new System.Drawing.Point(12, 201);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -67,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 188);
+            this.label2.Location = new System.Drawing.Point(8, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 20);
             this.label2.TabIndex = 3;
@@ -76,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 350);
+            this.label3.Location = new System.Drawing.Point(8, 497);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 20);
             this.label3.TabIndex = 5;
@@ -84,7 +86,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 739);
+            this.button1.Location = new System.Drawing.Point(12, 886);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(390, 42);
             this.button1.TabIndex = 6;
@@ -94,7 +96,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(408, 739);
+            this.button2.Location = new System.Drawing.Point(408, 886);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(206, 42);
             this.button2.TabIndex = 7;
@@ -104,16 +106,36 @@
             // 
             // treeView
             // 
-            this.treeView.Location = new System.Drawing.Point(12, 373);
+            this.treeView.Location = new System.Drawing.Point(12, 520);
             this.treeView.Name = "treeView";
             this.treeView.Size = new System.Drawing.Size(602, 360);
             this.treeView.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(12, 365);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(602, 119);
+            this.textBox3.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 342);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Пакет";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 793);
+            this.ClientSize = new System.Drawing.Size(633, 951);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.treeView);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -139,6 +161,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TreeView treeView;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

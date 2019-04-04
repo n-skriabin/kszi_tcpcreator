@@ -37,6 +37,8 @@ namespace Lab_01
 
             InitDataNullArray();
             StartListen();
+            textBox3.ScrollBars = ScrollBars.Both;
+            textBox3.WordWrap = false;
         }
 
         public void InitDataNullArray()
@@ -183,6 +185,24 @@ namespace Lab_01
                 case Protocol.TCP:
                     TcpHeader tcpHeader = new TcpHeader(ipHeader.Data,
                                             ipHeader.MessageLength);
+                    string result = string.Empty;
+                    foreach (var item in ipHeader.Data)
+                    {
+                        if (item == 0x00)
+                        {
+                            break;
+                        }
+
+                        result += Convert.ToString(item, 2).PadLeft(8, '0');
+                    }
+                    var test = tcpHeader.ByTCPData;
+
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        textBox3.Text = result;
+                        //MessageBox.Show(result, "TCP-Package", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }));
+
                     TreeNode tcpNode = MakeTCPTreeNode(tcpHeader);
                     rootNode.Nodes.Add(tcpNode);
                     // If the port is equal to 53 then the underlying protocol is DNS.
